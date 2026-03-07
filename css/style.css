@@ -15,7 +15,6 @@ body { font-family: 'Barlow', sans-serif; background: var(--bg); color: var(--te
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { display: block; max-width: 100%; }
-
 /* ---------- Navigation Bar ---------- */
 .site-nav {
   position: fixed;
@@ -165,3 +164,8 @@ footer { background: var(--green-dark); color: var(--white); padding: 3.5rem 2re
 .social-links a:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
 .social-links svg { width: 17px; height: 17px; fill: currentColor; }
 .footer-bar { border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1.25rem; text-align: center; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+/* ---------- Club Rules ---------- */
+.rules-notice { text-align: center; color: var(--orange); font-size: 0.95rem; margin-bottom: 1.75rem; }
+.rules-list { max-width: 620px; margin: 0 auto; padding-left: 1.25rem; }
+.rules-list li { font-size: 0.97rem; color: var(--text); padding: 0.4rem 0; }
+.rules-final { text-align: center; font-weight: 700; font-size: 1rem; color: var(--text); margin-top: 2rem; }
