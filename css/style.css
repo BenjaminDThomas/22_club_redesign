@@ -52,7 +52,7 @@ img { display: block; max-width: 100%; }
 .nav-links li a:hover { transform: translateY(-3px); color: var(--green); }
 .nav-cta { background: var(--green); font-weight: 700; letter-spacing: 0.1em; padding: 0.52rem 1.45rem; border-radius: 50px; margin-left: auto; flex-shrink: 0; }
 .nav-cta:hover { background: #00a86e; transform: translateY(-3px); color: var(--white); }
-/* ---------- Hamburger ---------- */
+/* ---------- Hamburger (ai generated) ---------- */
 .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; margin-left: 0.75rem; flex-shrink: 0; }
 .hamburger:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
 .hamburger span { display: block; width: 26px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease; }
@@ -119,7 +119,7 @@ img { display: block; max-width: 100%; }
 .download-btn:hover { transform: translateY(-3px); color: #b8621f; border-color: #b8621f; }
 .download-btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; border-radius: 2px; }
 .form-notice { font-size: 0.85rem; color: #555; margin: 1.5rem auto 0; max-width: 500px; line-height: 1.7; }
-/* ---------- Modal ---------- */
+/* ---------- Modal ---------- (ai generated) */
 .modal-backdrop { display: none; position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,0); transition: background 0.3s ease; align-items: center; justify-content: center; }
 .modal-backdrop.visible { display: flex; background: rgba(0,0,0,0.75); }
 .modal-box {
@@ -169,3 +169,22 @@ footer { background: var(--green-dark); color: var(--white); padding: 3.5rem 2re
 .rules-list { max-width: 620px; margin: 0 auto; padding-left: 1.25rem; }
 .rules-list li { font-size: 0.97rem; color: var(--text); padding: 0.4rem 0; }
 .rules-final { text-align: center; font-weight: 700; font-size: 1rem; color: var(--text); margin-top: 2rem; }
+/* ---------- Deals (ai generated) ---------- */
+.deal-section { margin-bottom: 1.5rem; }
+.deal-card { display: flex; align-items: stretch; gap: 1.25rem; background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.08); padding: 1rem; max-width: 860px; margin: 0 auto; }
+.deal-img { width: 180px; flex-shrink: 0; border-radius: 6px; object-fit: cover; }
+.deal-body { flex: 1; }
+.deal-body h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: 0.06em; color: var(--text); margin-bottom: 0.15rem; }
+.deal-time { font-size: 0.9rem; font-weight: 700; color: var(--green-dark); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.4rem; }
+.deal-desc { font-size: 0.93rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.6rem; }
+.deal-prices { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.6rem; }
+.deal-prices li { display: flex; align-items: center; gap: 0.5rem; background: var(--bg); border-radius: 6px; padding: 0.3rem 0.8rem; }
+.deal-duration { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.deal-price { font-family: 'Bebas Neue', sans-serif; font-size: 1.15rem; color: var(--green-dark); letter-spacing: 0.04em; }
+.deal-notes { margin-top: 0; }
+.deal-notes li { font-size: 0.82rem; color: #777; padding: 0.08rem 0; }
+.deal-section .section-header { margin-bottom: 1rem; }
+@media (max-width: 600px) {
+  .deal-card { flex-direction: column; padding: 0.85rem; }
+  .deal-img { width: 100%; height: auto; max-height: none; object-fit: contain; border-radius: 4px; }
+}
