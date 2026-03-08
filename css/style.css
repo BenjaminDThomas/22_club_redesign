@@ -11,10 +11,11 @@
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Barlow', sans-serif; background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.6; }
+body { font-family: 'Barlow', sans-serif; background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { display: block; max-width: 100%; }
+
 /* ---------- Navigation Bar ---------- */
 .site-nav {
   position: fixed;
@@ -52,13 +53,15 @@ img { display: block; max-width: 100%; }
 .nav-links li a:hover { transform: translateY(-3px); color: var(--green); }
 .nav-cta { background: var(--green); font-weight: 700; letter-spacing: 0.1em; padding: 0.52rem 1.45rem; border-radius: 50px; margin-left: auto; flex-shrink: 0; }
 .nav-cta:hover { background: #00a86e; transform: translateY(-3px); color: var(--white); }
-/* ---------- Hamburger (ai generated) ---------- */
+
+/* ---------- Hamburger ---------- */
 .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; margin-left: 0.75rem; flex-shrink: 0; }
 .hamburger:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
 .hamburger span { display: block; width: 26px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease; }
 .hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 /* ---------- Mobile Drawer ---------- */
 .mobile-drawer {
   position: fixed;
@@ -84,6 +87,7 @@ img { display: block; max-width: 100%; }
 .mobile-drawer ul li:last-child a { border-bottom: none; }
 .mobile-drawer ul li a:hover { color: var(--green); padding-left: 6px; }
 .mobile-drawer .mobile-cta { display: inline-block; margin-top: 1.25rem; background: var(--green); color: var(--white); font-weight: 700; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.7rem 1.6rem; border-radius: 50px; }
+
 /* ---------- Hero ---------- */
 .hero { position: relative; height: 420px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.62); }
@@ -91,10 +95,12 @@ img { display: block; max-width: 100%; }
 .hero-content { position: relative; z-index: 1; text-align: center; }
 .hero-content h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 8vw, 5.5rem); letter-spacing: 0.06em; color: var(--white); line-height: 1; }
 .hero-content p { font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.1rem, 3vw, 1.5rem); letter-spacing: 0.18em; color: var(--green); margin-top: 0.4rem; }
+
 /* ---------- Section Header ---------- */
 .section-header { display: flex; align-items: center; gap: 1.2rem; width: 80%; margin: 0 auto 2rem; }
 .section-header .rule-line { flex: 1; height: 2px; background: var(--green); border-radius: 2px; }
 .section-header h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 0.08em; color: var(--text); white-space: nowrap; }
+
 /* ---------- Sections ---------- */
 .eligibility { margin-bottom: 3.5rem; }
 .eligibility p { text-align: center; font-size: 1rem; color: var(--text-muted); max-width: 620px; margin: 0 auto; line-height: 1.75; }
@@ -119,7 +125,8 @@ img { display: block; max-width: 100%; }
 .download-btn:hover { transform: translateY(-3px); color: #b8621f; border-color: #b8621f; }
 .download-btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; border-radius: 2px; }
 .form-notice { font-size: 0.85rem; color: #555; margin: 1.5rem auto 0; max-width: 500px; line-height: 1.7; }
-/* ---------- Modal ---------- (ai generated) */
+
+/* ---------- Modal ---------- */
 .modal-backdrop { display: none; position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,0); transition: background 0.3s ease; align-items: center; justify-content: center; }
 .modal-backdrop.visible { display: flex; background: rgba(0,0,0,0.75); }
 .modal-box {
@@ -147,6 +154,7 @@ img { display: block; max-width: 100%; }
 }
 .modal-download-link:hover { transform: translateY(-2px); background: #b8621f; }
 .modal-download-link svg { width: 14px; height: 14px; fill: var(--white); }
+
 /* ---------- Footer ----------*/
 footer { background: var(--green-dark); color: var(--white); padding: 3.5rem 2rem 2rem; }
 .footer-col h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; letter-spacing: 0.14em; padding-bottom: 0.55rem; border-bottom: 2px solid rgba(255,255,255,0.4); margin-bottom: 1rem; }
@@ -164,15 +172,18 @@ footer { background: var(--green-dark); color: var(--white); padding: 3.5rem 2re
 .social-links a:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
 .social-links svg { width: 17px; height: 17px; fill: currentColor; }
 .footer-bar { border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1.25rem; text-align: center; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+
 /* ---------- Club Rules ---------- */
 .rules-notice { text-align: center; color: var(--orange); font-size: 0.95rem; margin-bottom: 1.75rem; }
 .rules-list { max-width: 620px; margin: 0 auto; padding-left: 1.25rem; }
 .rules-list li { font-size: 0.97rem; color: var(--text); padding: 0.4rem 0; }
 .rules-final { text-align: center; font-weight: 700; font-size: 1rem; color: var(--text); margin-top: 2rem; }
-/* ---------- Deals (ai generated) ---------- */
+
+/* ---------- Deals ---------- */
 .deal-section { margin-bottom: 1.5rem; }
 .deal-card { display: flex; align-items: stretch; gap: 1.25rem; background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.08); padding: 1rem; max-width: 860px; margin: 0 auto; }
 .deal-img { width: 180px; flex-shrink: 0; border-radius: 6px; object-fit: cover; }
+.deal-img--right { order: 1; }
 .deal-body { flex: 1; }
 .deal-body h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: 0.06em; color: var(--text); margin-bottom: 0.15rem; }
 .deal-time { font-size: 0.9rem; font-weight: 700; color: var(--green-dark); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.4rem; }
@@ -187,4 +198,58 @@ footer { background: var(--green-dark); color: var(--white); padding: 3.5rem 2re
 @media (max-width: 600px) {
   .deal-card { flex-direction: column; padding: 0.85rem; }
   .deal-img { width: 100%; height: auto; max-height: none; object-fit: contain; border-radius: 4px; }
+  .deal-img--right { order: 0; }
+}
+
+/* ---------- Home Hero ---------- */
+.home-hero { height: 100vh; min-height: 600px; }
+.hero-cta { display: inline-block; margin-top: 1.5rem; background: var(--green); color: var(--white); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 2rem; border-radius: 50px; transition: background 0.2s ease, transform 0.2s ease; }
+.hero-cta:hover { background: #00a86e; transform: translateY(-3px); }
+.hero-tagline { position: absolute; bottom: 0; left: 0; right: 0; z-index: 2; display: grid; grid-template-columns: 2fr 0.8fr 1.2fr 0.8fr; align-items: center; padding: 0 4%; height: 18vh; min-height: 110px; }
+.tagline-heading { font-family: 'Barlow', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); text-align: left; grid-column: 2; }
+.tagline-desc { font-size: 0.88rem; color: rgba(255,255,255,0.85); line-height: 1.5; text-align: left; grid-column: 3; }
+.tagline-btn { display: inline-block; background: var(--green); color: var(--white); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.65rem 1.5rem; border-radius: 50px; white-space: nowrap; justify-self: end; grid-column: 4; transition: background 0.2s ease, transform 0.2s ease; }
+.tagline-btn:hover { background: #00a86e; transform: translateY(-2px); }
+.home-hero .hero-content { margin-bottom: 18vh; }
+.tagline-heading { font-family: 'Barlow', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); white-space: nowrap; }
+.tagline-desc { font-size: 0.88rem; color: rgba(255,255,255,0.85); line-height: 1.5; flex: 1; max-width: 400px; }
+.tagline-btn { display: inline-block; background: var(--green); color: var(--white); font-weight: 700; font-size: 0.88rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.65rem 1.5rem; border-radius: 50px; white-space: nowrap; transition: background 0.2s ease, transform 0.2s ease; }
+.tagline-btn:hover { background: #00a86e; transform: translateY(-2px); }
+
+/* ---------- Find Us ---------- */
+.find-us { position: relative; overflow: hidden; }
+.find-us-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.35); }
+.find-us-inner { position: relative; z-index: 1; max-width: 1200px; width: 90%; margin: 0 auto; padding: 4rem 0; }
+.find-us-title { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; letter-spacing: 0.08em; color: var(--white); text-align: center; margin-bottom: 2rem; }
+.find-us-title span { color: var(--green); }
+.find-us-content { display: flex; gap: 2rem; align-items: flex-start; }
+.find-us-left { display: flex; flex-direction: column; gap: 1rem; flex: 0 0 420px; }
+.find-us-content iframe { flex: 1; min-width: 0; height: 380px; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+.info-card { display: flex; align-items: flex-start; gap: 1rem; background: rgba(20,20,20,0.75); border-radius: 12px; padding: 1.1rem 1.25rem; backdrop-filter: blur(4px); }
+.info-icon { display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; min-width: 42px; background: var(--green); border-radius: 8px; }
+.info-icon svg { width: 22px; height: 22px; fill: var(--white); }
+.info-card h3 { font-family: 'Barlow', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 0.35rem; }
+.info-card address, .info-card p { font-style: normal; font-size: 0.9rem; color: rgba(255,255,255,0.75); line-height: 1.6; }
+.directions-btn { display: block; text-align: center; background: var(--green); color: var(--white); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.85rem 2rem; border-radius: 50px; margin-top: 0.5rem; transition: background 0.2s ease, transform 0.2s ease; }
+.directions-btn:hover { background: #00a86e; transform: translateY(-2px); }
+
+/* ---------- Facilities ---------- */
+.facilities { padding-top: 3rem; padding-bottom: 2rem; }
+.facilities-list { padding: 0; }
+.facility-item { margin-bottom: 2.5rem; text-align: center; }
+.facility-item img { max-width: 600px; width: 90%; margin: 0 auto 1rem; }
+.facility-item p { max-width: 620px; margin: 0 auto; font-size: 0.97rem; color: var(--text-muted); line-height: 1.75; }
+
+/* ---------- Beer Animation ---------- */
+.beer-section { position: relative; width: 100%; height: 380px; overflow: hidden; background: var(--bg); margin: 0; }
+.beer-stage { position: absolute; inset: 0; }
+.bl-liquid { position: absolute; bottom: 0; left: 0; width: 100%; height: 0; object-fit: cover; object-position: top center; z-index: 1; }
+.beer-section.pour-active .bl-liquid { height: 100%; transition: height 2.8s ease; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 820px) {
+  .beer-section { height: 220px; }
+}
+@media (max-width: 480px) {
+  .beer-section { height: 180px; }
 }
