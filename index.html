@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 Club</title>
+    <meta name="description" content="01 Club is a social snooker and pool club offering professional tables, darts, and a fully stocked bar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" fetchpriority="high" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin fetchpriority="high" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-number">01</span>
+                <span class="logo-word">Club</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="club-deals.html">Deals</a></li>
+                <li><a href="index.html#facilities">Facilities</a></li>
+                <li><a href="index.html#find-us">Find Us</a></li>
+                <li><a href="club-rules.html">Club Rules</a></li>
+            </ul>
+            <a href="membership.html" class="nav-cta" aria-current="page">Membership</a>
+            <button class="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <nav id="mobile-menu" class="mobile-drawer">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="club-deals.html">Deals</a></li>
+            <li><a href="index.html#facilities">Facilities</a></li>
+            <li><a href="index.html#find-us">Find Us</a></li>
+            <li><a href="club-rules.html">Club Rules</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero home-hero">
+        <img src="images/hero_banner_container.jpg" alt="01 Club Ormskirk interior" fetchpriority="high" />
+        <span class="hero-overlay" aria-hidden="true"></span>
+        <div class="hero-content">
+            <h1>01 Club Ormskirk</h1>
+            <p>Home of Snooker, Pool and Darts</p>
+            <div class="hero-hours">
+                <span class="hero-hours-title">Opening Hours</span>
+                <span class="hero-hours-line">Mon–Sat: 12:00 PM – 11:00 PM</span>
+                <span class="hero-hours-line">Sun: 12:00 PM – 10:00 PM</span>
+            </div>
+            <a href="membership.html" class="hero-cta">Become a Member</a>
+        </div>
+        <aside class="hero-tagline">
+            <p class="tagline-heading">A Space to Play &amp; Unwind</p>
+            <p class="tagline-desc">Quality tables, relaxed atmosphere and a fully licensed bar open 7 days a week.</p>
+            <a href="#facilities" class="tagline-btn">More About Us</a>
+        </aside>
+    </header>
+
+    <main>
+        <!-- Find Us -->
+        <section id="find-us" class="find-us" aria-labelledby="find-us-heading">
+            <img src="images/find_us_background_layer.jpg" alt="" class="find-us-bg" aria-hidden="true" loading="lazy" />
+            <div class="find-us-inner">
+                <h2 id="find-us-heading" class="find-us-title">Find <span>Us</span></h2>
+                <div class="find-us-content">
+                    <div class="find-us-left">
+                        <article class="info-card">
+                            <span class="info-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            </span>
+                            <div>
+                                <h3>Address</h3>
+                                <address>
+                                    22 Club Ormskirk, Moorgate<br />
+                                    Ormskirk L39 4RU<br />
+                                    United Kingdom
+                                </address>
+                            </div>
+                        </article>
+                        <article class="info-card">
+                            <span class="info-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                            </span>
+                            <div>
+                                <h3>Opening Hours</h3>
+                                <p>Monday - Saturday: 12:00 PM - 11:00 PM</p>
+                                <p>Sunday: 12:00 PM - 10:00 PM</p>
+                            </div>
+                        </article>
+                        <a href="https://maps.google.com/?q=22+Club+Ormskirk+Moorgate+Ormskirk+L39+4RU" target="_blank" rel="noopener noreferrer" class="directions-btn">Get Directions</a>
+                    </div>
+
+                    <!-- Google Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1772914949297!6m8!1m7!1sCAoSLEFGMVFpcE03NHZ5S3hSUjF0a04zMUIzWkFEdktvT0xZNFBYRVdMQW1ZZ3Fa!2m2!1d53.5658836!2d-2.8861214!3f273.2109470924082!4f-6.9681124931479275!5f0.7820865974627469"
+                        width="100%"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="01 Club Ormskirk location map"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities -->
+        <section id="facilities" class="facilities" aria-labelledby="facilities-heading">
+            <header class="section-header">
+                <span class="rule-line" aria-hidden="true"></span>
+                <h2 id="facilities-heading">Facilities</h2>
+                <span class="rule-line" aria-hidden="true"></span>
+            </header>
+            <ul class="facilities-list">
+                <li class="facility-item">
+                    <img src="images/bar_header_container.png" alt="Bar" loading="lazy" />
+                    <p>From hand-pulled ales to cocktails, our fully stocked bar is the perfect place to relax between frames. Whether you're celebrating a win or just unwinding, the bar team are on hand to look after you.</p>
+                </li>
+                <li class="facility-item">
+                    <img src="images/snooker_header-container.png" alt="Snooker" loading="lazy" />
+                    <p>We have full-size professional snooker tables available for members. Whether you're a seasoned player or just learning the game, our tables are maintained to the highest standard for a great playing experience.</p>
+                </li>
+                <li class="facility-item">
+                    <img src="images/pool_header-container.png" alt="Pool" loading="lazy" />
+                    <p>Enjoy both American and English pool at 01 Club. Our pool tables are perfect for casual games with friends or more competitive play. Tables are available throughout opening hours for all members.</p>
+                </li>
+                <li class="facility-item">
+                    <img src="images/darts_container.webp" alt="Darts" loading="lazy" />
+                    <p>Test your aim on our dedicated darts boards. A great way to round off a session or challenge your mates to a friendly match. Available to all members during opening hours.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Beer pour animation -->
+        <section class="beer-section" id="beer-anim" aria-hidden="true">
+            <div class="beer-stage">
+                <img src="images/liquid_icon.webp" alt="" class="bl-liquid" />
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <section class="footer-col" aria-labelledby="footer-club">
+                    <h3 id="footer-club">Club</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#facilities">Facilities</a></li>
+                        <li><a href="club-deals.html">Deals</a></li>
+                    </ul>
+                </section>
+                <section class="footer-col" aria-labelledby="footer-info">
+                    <h3 id="footer-info">Information</h3>
+                    <ul>
+                        <li><a href="index.html#find-us">Find Us</a></li>
+                        <li><a href="club-rules.html">Club Rules</a></li>
+                    </ul>
+                </section>
+                <section class="footer-col" aria-labelledby="footer-join">
+                    <h3 id="footer-join">Join</h3>
+                    <ul>
+                        <li><a href="#top">Membership</a></li>
+                    </ul>
+                </section>
+                <section class="footer-col" aria-labelledby="footer-connect">
+                    <h3 id="footer-connect">Connect</h3>
+                    <address>
+                        <p>Tel: <a href="tel:01695727127">01695727127</a></p>
+                        <a href="mailto:contact@22club.co.uk">contact@22club.co.uk</a>
+                    </address>
+                    <nav class="social-links" aria-label="Social media links">
+                        <a href="https://www.facebook.com/22club/?locale=en_GB" target="_blank" rel="noopener noreferrer" aria-label="22 Club on Facebook (opens in new tab)">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/22club_ormskirk/?hl=en-gb" target="_blank" rel="noopener noreferrer" aria-label="22 Club on Instagram (opens in new tab)">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="17.5" cy="6.5" r="1.2"/>
+                            </svg>
+                        </a>
+                    </nav>
+                </section>
+            </div>
+            <small class="footer-bar">&copy; <span id="yr"></span> 01 Club. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/membership.js"></script>
+    <script src="js/beer-pour.js" defer></script>
+</body>
+</html>

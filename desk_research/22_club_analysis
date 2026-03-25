@@ -1,0 +1,37 @@
+22 Club: 
+View Here: "http://www.22club.co.uk/"
+The existing 22 Club website was analysed to identify usability and design issues that could be improved in a redesigned version of the site.
+
+Key Issues Identified
+
+Navigation readability
+- The top navigation bar lacked strong contrast between the background and text. This reduced readability and made navigation difficult, especially on smaller screens.
+
+Mobile responsiveness
+- When the site was viewed on mobile devices, the navigation bar resized poorly. Elements became cramped and difficult to interact with.
+
+Typography and text layout
+- Large sections of text were centre aligned, which reduced readability. Consistent left-aligned text is generally easier for users to scan and read.
+
+Content hierarchy and flow
+- Information was not organised clearly, which disrupted the natural reading flow. Sections such as facilities (bar, pool, snooker, darts) appeared visually cluttered.
+
+Visual consistency
+- Some images appeared misaligned or poorly integrated into the layout. This made parts of the site feel visually inconsistent.
+
+Unclear structure
+- The “Find Us” section only contained a Google Maps embed without a clear label. Users may not immediately understand the purpose of the section.
+
+Incomplete pages
+- Some pages were empty or lacked meaningful content. This created a poor user experience and reduced trust in the site.
+
+Backend portal exclusion
+- The administrative portal was intentionally excluded from the redesign scope as it falls outside a UX/UI front-end design role.
+
+Opportunities for Improvement
+- Improve navbar contrast and visibility
+- Implement mobile responsive navigation
+- Use consistent typography and left-aligned text
+- Improve visual hierarchy and spacing
+- Clearly label sections such as location and facilities
+- Maintain consistent imagery and layout design
