@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 /* 
    Script developed with assistance from Claude AI.
    Logic has been reviewed, adapted, and optimised to fit project requirements,
    including accessibility considerations and responsive behaviour.
 */
+=======
+/* ai generated */
+>>>>>>> 802797a2d1bf416178019c843b0ab889b4debf8e
 
 /* ---------- Beer Pour Animation ---------- */
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,10 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
     /* transition reset */
     section.classList.remove('pour-active');
     /* reset liquid height */
+<<<<<<< HEAD
     if (liquid) liquid.classList.add('bl-liquid-reset');
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         if (liquid) liquid.classList.remove('bl-liquid-reset');
+=======
+    if (liquid) { liquid.style.cssText = 'transition:none; height:0;'; }
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (liquid) liquid.style.cssText = '';
+>>>>>>> 802797a2d1bf416178019c843b0ab889b4debf8e
         /* trigger beer liquid fill */
         setTimeout(() => section.classList.add('pour-active'), 300);
       });
