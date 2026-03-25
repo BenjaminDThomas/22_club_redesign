@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 /* 
    Script developed with assistance from Claude AI.
    Logic has been reviewed, adapted, and optimised to fit project requirements,
    including accessibility considerations and responsive behaviour.
 */
-=======
-/* ai generated */
->>>>>>> 802797a2d1bf416178019c843b0ab889b4debf8e
 
 /* ---------- Footer Copyright Auto Assign ---------- */
 document.getElementById('yr').textContent = new Date().getFullYear();
